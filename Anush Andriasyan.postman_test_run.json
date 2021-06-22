@@ -1,0 +1,115 @@
+{
+	"id": "aabca8e7-a335-4fbf-8554-751ab5134c23",
+	"name": "Anush Andriasyan",
+	"timestamp": "2021-06-21T20:35:51.843Z",
+	"collection_id": "bef83ab4-fea6-4464-81e4-282552519bb8",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "b3993cae-62da-4f9f-9a9b-a97671d842bf",
+			"name": "Get fundamental courses",
+			"url": "https://qwallity2.herokuapp.com/courses/fundamental/api",
+			"time": 207,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				207
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "0b706ad0-01c7-41d9-86ce-6814c9a599a3",
+			"name": "Get advanced courses",
+			"url": "https://qwallity2.herokuapp.com/courses/advanced/api",
+			"time": 1846,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1846
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "38050d2e-0e4d-4772-9016-e250a80013c2",
+			"name": "Add course",
+			"url": "https://qwallity2.herokuapp.com/add_course/api",
+			"time": 122,
+			"responseCode": {
+				"code": 500,
+				"name": "INTERNAL SERVER ERROR"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				122
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2175,
+	"collection": {
+		"requests": [
+			{
+				"id": "b3993cae-62da-4f9f-9a9b-a97671d842bf",
+				"method": "GET"
+			},
+			{
+				"id": "0b706ad0-01c7-41d9-86ce-6814c9a599a3",
+				"method": "GET"
+			},
+			{
+				"id": "38050d2e-0e4d-4772-9016-e250a80013c2",
+				"method": "POST"
+			},
+			{
+				"id": "b01a6b1c-6b8b-44bd-9515-12985578dcf9",
+				"method": "PUT"
+			}
+		]
+	}
+}
